@@ -8,10 +8,9 @@ import tools.jackson.core.JacksonException;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 
-public class JsonUtils {
+public class AlunoMapper {
 
-
-	    public static final String ALUNO_API = "http://localhost:8080/demo-api/aluno/all";  
+	    
 	    public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();  
 
 	    public static List<Aluno> toList(InputStream inputStream) throws IOException {  
@@ -39,16 +38,7 @@ public class JsonUtils {
 	        catch (JacksonException exc) {  
 	            throw new IOException(exc);  
 	        }
-	    }
-
-	    public static Aluno buildAluno() {  	        
-
-	       Aluno a = new Aluno();
-	       a.setEmail("mura@arum.com");
-	       a.setNome("Murakami");
-	         
-	       return a;
-	    }
+	    }	    
 
 	}
 
