@@ -33,8 +33,39 @@
 	
 	
 	<dependencies>
+	
+		<!-- Jakarta-->
+		
+		<dependency>
+		    <groupId>jakarta.servlet</groupId>
+		    <artifactId>jakarta.servlet-api</artifactId>
+		    <version>6.0.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>jakarta.faces</groupId>
+		    <artifactId>jakarta.faces-api</artifactId>
+		    <version>4.0.1</version>
+		</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
+		<dependency>
+		    <groupId>jakarta.inject</groupId>
+		    <artifactId>jakarta.inject-api</artifactId>
+		    <version>2.0.1</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.glassfish</groupId>
+		    <artifactId>jakarta.faces</artifactId>
+		    <version>4.0.8</version>
+		</dependency>
+		
+		<!-- Jakarta fim-->
+		
+		
 
-		<!-- Servlet/JSF -->
+		<!-- Servlet/JSF 
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -52,7 +83,7 @@
 			<version>3.1.9.Final</version>
 		</dependency>
 
-		<!-- JSF e Expression Language -->
+		
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
@@ -63,7 +94,7 @@
 			<artifactId>javax.el-api</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-
+		-->
 
 		<!-- Source: https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind -->
 		<dependency>
@@ -95,16 +126,20 @@
 			<version>1.18.26</version>
 			<scope>provided</scope>
 		</dependency>
+		
 		<dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.28</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.18.0</version>
         </dependency>
+		
+		<!--
+		<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.28</version>
+        </dependency>        
+        -->
 
 	</dependencies>
 	<!-- Repositorio PrimeFaces atzualizado -->
