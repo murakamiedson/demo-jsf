@@ -14,11 +14,11 @@ import demojsf.model.Aluno;
 import demojsf.service.AlunoService;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.log4j.Log4j;
 
 
 
-@Log4j2
+@Log4j
 @Getter
 @Setter
 @Named
@@ -35,8 +35,8 @@ public class ManterAlunoBean implements Serializable {
 	
 	@PostConstruct
 	public void inicializar() {
-		log.info("init pesquisa");
-		buscarTodos();
+		log.info("ManterAluno inicializar()");
+		this.alunos = alunoService.buscarTodos();
 	}
 
 	public void salvar() {
@@ -48,14 +48,9 @@ public class ManterAlunoBean implements Serializable {
 	}
 	
 	public void atualizar() {
-		log.info("excluindo Aluno...");  		
+		log.info("atualizando Aluno...");  		
 	}	
-	
-	public void buscarTodos() {  
-	    log.info("buscando todos os Alunos...");  
-	    alunoService.buscarTodos();	    
-	}
-	
+		
 	public void limpar() {
 		log.info("limpar");
 		this.aluno = new Aluno();
