@@ -44,7 +44,7 @@
                                 <resource>
                                     <directory>/target</directory>
                                     <includes>
-                                        <include>demo.war</include>
+                                        <include>demo-jsf.war</include>
                                     </includes>
                                 </resource>
                             </resources>
