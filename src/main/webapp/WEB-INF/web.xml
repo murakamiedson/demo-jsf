@@ -9,12 +9,7 @@
 	</welcome-file-list>
 	<listener>
 		<listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
-	</listener>
-
-	<context-param>
-		<param-name>primefaces.UPLOADER</param-name>
-		<param-value>auto</param-value>
-	</context-param>
+	</listener>	
 
 	<resource-env-ref>
 		<resource-env-ref-name>BeanManager</resource-env-ref-name>
